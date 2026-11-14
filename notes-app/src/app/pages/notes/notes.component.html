@@ -3,6 +3,9 @@
 <section class="notes-section">
     <h2>Notes</h2>
     <ul class="notes-list">
+        <li>
+            <app-create-note></app-create-note>
+        </li>
        @for (note of noteService.notes; track note.id) {
             <li class="note-item">
                 <app-note-card [note]="note"></app-note-card>
