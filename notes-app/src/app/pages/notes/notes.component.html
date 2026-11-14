@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<section class="notes-section">
+    <h2>Notes</h2>
+    <ul class="notes-list">
+       @for (note of noteService.notes; track note.id) {
+            <li class="note-item">
+                <app-note-card [note]="note"></app-note-card>
+                
+            </li>
+        }
+    </ul>
+</section>
